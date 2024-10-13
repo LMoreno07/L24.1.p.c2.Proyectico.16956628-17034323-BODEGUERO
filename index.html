@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>BODEGA LL</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <section id="inicioBodegaForm">
+      <h3>Inicializando la caja de la Bodega</h3>
+      <input type="text" id="inicioBodegaForm_inBillete10" placeholder="Cantidad de billetes de 10"></input>
+      <input type="text" id="inicioBodegaForm_inBillete20" placeholder="Cantidad de billetes de 20"></input>
+      <input type="text" id="inicioBodegaForm_inBillete50" placeholder="Cantidad de billetes de 50"></input>
+      <button id="inicioBodegaForm_btAceptar">Aceptar</button> 
+    </section>
+    <section id="mainForm">
+      <h3>BODEGA</h3>
+      <h5>Cantidad inicial de billetes: <span id="inicioBodegaForm_lblinBillete10"> </span> de 10$, <span id="inicioBodegaForm_lblinBillete20"> </span> de 20$ y <span id="inicioBodegaForm_lblinBillete50"> </span> de 50$</h5>
+      <table id="mainForm_tabla">
+        <tr>
+          <th>Cédula</th>
+          <th>Denominación</th>
+          <th>Cantidad</th>
+          <th>Monto</th>
+        </tr>
+      </table>
+      <h5>Monto final de billetes de 10 es de $<span id="mainForm_lblMontoBillete10">?</span> </h5>
+      <h5>Monto final de billetes de 20 es de $<span id="mainForm_lblMontoBillete20">?</span> </h5>
+      <h5>Monto final de billetes de 50 es de $<span id="mainForm_lblMontoBillete50">?</span> </h5>
+      <h5>Al bodeguero le queda un monto total de $<span id="mainForm_lblMontoTotalBodega">?</span></h5>
+      <button id="mainForm_btAgregar">Agregar cliente</button>
+    </section>
+
+    <section id="clienteForm">
+      <h3>Datos del cliente</h3>
+      <input type="text" id="clienteForm_inCedula" placeholder="Cédula"></input>
+      <input type="text" id="clienteForm_inDenominacion" placeholder="Denominación"></input>
+      <input type="text" id="clienteForm_inCantidad"  placeholder="Cantidad"></input>
+      <button id="clienteForm_btAceptar">Aceptar</button> 
+    </section>
+  </body>
+  <script type="module">
+    import Cl_controlador from "./js/Cl_controlador.js";
+    new Cl_controlador()
+ </script>
+</html>
