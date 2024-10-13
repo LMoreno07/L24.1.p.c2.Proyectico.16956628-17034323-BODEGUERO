@@ -13,9 +13,7 @@ export default class Cl_vInicioBodega {
           billete10: this.inBillete10.value,
           billete20: this.inBillete20.value,
           billete50: this.inBillete50.value
-        });     //*/   
-        //this.ocultar();
-        //controlador.mostrarVistaBodega();
+        });
     }
     mostrar() {
       this.vista.hidden = false;

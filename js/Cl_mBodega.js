@@ -1,9 +1,9 @@
 export default class Cl_mBodega {
   constructor() {
     this.acMontoTotal = 0;
-    this.acBillete10 = 0;//billete10;
-    this.acBillete20 = 0;//billete20;
-    this.acBillete50 = 0;//billete50;
+    this.acBillete10 = 0;
+    this.acBillete20 = 0;
+    this.acBillete50 = 0;
   }
   procesarInicializarBodega(incBod){
     this.acBillete10 = incBod.billete10;
